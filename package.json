@@ -1,0 +1,26 @@
+{
+	"name": "@dsbunny/zod-registry",
+	"version": "1.0.0",
+	"description": "Common Zod registry for @dsbunny schema packages, avoiding pollution of the global registry",
+	"type": "module",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"author": "Steve-o <fnjordy@gmail.com>",
+	"license": "MIT",
+	"private": false,
+	"scripts": {
+		"build": "tsc",
+		"clean": "rm -rf dist node_modules package-lock.json",
+		"pull:upstream": "./scripts/pull-upstream.sh",
+		"rebuild": "npm run clean && npm run pull:upstream && npm install && npm run build",
+		"test": "tsc && node --test dist/index.test.js"
+	},
+	"devDependencies": {
+		"@types/node": "^25.3.0",
+		"typescript": "^5.9.3",
+		"zod": "^4.3.6"
+	},
+	"peerDependencies": {
+		"zod": "^4.0.0"
+	}
+}
