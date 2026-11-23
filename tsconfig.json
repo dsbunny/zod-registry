@@ -13,7 +13,9 @@
 		"noUnusedLocals": false,
 		"sourceMap": true,
 		"skipLibCheck": true,
-		"declaration": true
+		"declaration": true,
+		"declarationMap": true,
+		"types": ["node"]
 	},
 	"include": [
 		"src/**/*.ts"

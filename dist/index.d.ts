@@ -6,3 +6,4 @@ export declare class LayeredRegistry extends z.core.$ZodRegistry<z.GlobalMeta> {
     has(schema: z.core.$ZodType): boolean;
 }
 export declare const dsbunnyRegistry: LayeredRegistry;
+//# sourceMappingURL=index.d.ts.map
